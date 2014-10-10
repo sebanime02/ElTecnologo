@@ -1,0 +1,79 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="CuantoValeapp.Nivel2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="304"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <MediaElement x:Name="musica"   Source="suspenso.MP3" AutoPlay="True" />
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+
+            <TextBlock Text="NIVEL 2" FontFamily="Comic Sans Ms"  Foreground="#3AA31D"  Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid Grid.Row="1" Grid.Column="0" Margin="12,0,12,0">
+            <TextBlock Width="362"  FontWeight="Bold" FontSize="25"  Text="Rango Error: 20 000 COP" Foreground="#3AA31D"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="64,-27,-146,48"/>
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="12,0,12,0"/>
+        <Grid Grid.Row="2" Margin="0,0,12,0" HorizontalAlignment="Right" Width="426" Grid.ColumnSpan="2">
+
+
+            <Image HorizontalAlignment="Left"  Source="sims4edicionlimitada.JPG" Height="184" VerticalAlignment="Top" Width="264" Margin="100,0,0,0"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="0,0,12,0" HorizontalAlignment="Right" Width="426" Grid.ColumnSpan="2">
+
+            <TextBlock  Text="Los Sims 4 Limited Edition (pc, 2014) " FontWeight="Bold" FontSize="20" FontFamily="Comic Sans MS" Foreground="#3AA31D" HorizontalAlignment="Center" Width="416" Margin="10,0,0,0"   />
+
+
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="0,0,12,0" HorizontalAlignment="Right" Width="426" Grid.ColumnSpan="2">
+
+            <Image HorizontalAlignment="Left"  Source="EBAY.PNG" Height="145" VerticalAlignment="Center" Width="226" Margin="100,0,0,0"/>
+
+
+
+        </Grid>
+
+        <Grid Grid.Row="5" Margin="-8,10,12,87" HorizontalAlignment="Right" Width="476" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock Text="COP" FontWeight="ExtraBold"  FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Left"  Foreground="#3AA31D" Width="62" Margin="375,24,0,0" Height="73" RenderTransformOrigin="0.44,0.818" />
+            <TextBox  x:Name="box"  FontWeight="ExtraBold"  FontSize="30" InputScope="Number" Background="#CCCCCC"  HorizontalAlignment="Center"  Foreground="#3AA31D"  BorderBrush="#3AA31D" Margin="128,0,101,0" Width="247"   />
+            <TextBlock Text="PRECIO :" FontWeight="ExtraBold"  FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Left"  Foreground="#3AA31D" Width="113" Margin="15,24,0,0" Height="73" RenderTransformOrigin="0.44,0.818" />
+
+
+        </Grid>
+
+        <Grid Grid.Row="6">
+            <Button Content="OK"  FontWeight="Bold" Background="#3AA31D" Foreground="White"  FontFamily="Comic Sans MS" FontSize="40"  HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="99" Margin="0,0,-164,-2" Click="Validar"  />
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

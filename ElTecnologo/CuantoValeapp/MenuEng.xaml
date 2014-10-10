@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="CuantoValeapp.MenuEng"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:Name="media"    AutoPlay="True" Source="Cancion Cuanto Vale 2.MP3" MediaEnded="Finished" />
+        <!--TitlePanel contains the name of the application and page title-->
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <Canvas  >
+                <Image  Canvas.Left="44" Canvas.Top="36" Source="thetechnologist interno.jpg" Width="376" Height="259"  />
+            </Canvas>
+        </Grid>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Image x:Name="btnPLay"  Canvas.Left="44" Canvas.Top="36" Source="play.jpg" Margin="146,10,34,-48" Tap="Play"  />
+        </Grid>
+        <Grid Grid.Row="2" Margin="0,5,0,79" Grid.RowSpan="2">
+
+            <Image  x:Name="btnRanking" Source="podio.jpg" Width="176" Height="137" Margin="270,30,34,0" Tap="GoRanking"  />
+            <Image  x:Name="btnConfig"   Source="engranaje.png" HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="148" Margin="37,10,0,0" RenderTransformOrigin="0.698,0.579" Tap="GoConfig" />
+
+
+
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <TextBlock Text="Created By Sebastian Dejoy " FontSize="15"  TextWrapping="Wrap" FontFamily="Arial" VerticalAlignment="Center" Foreground="#3AA31D"  HorizontalAlignment="Center" Margin="139,19,146,47"/>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

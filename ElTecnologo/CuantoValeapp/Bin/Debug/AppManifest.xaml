@@ -1,0 +1,16 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="CuantoValeapp" EntryPointType="CuantoValeapp.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="CuantoValeapp" Source="CuantoValeapp.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart Source="es-AR/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-BO/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-CL/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-CO/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-CR/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-DO/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-EC/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-SV/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es-VE/CuantoValeapp.resources.dll" />
+    <AssemblyPart Source="es/CuantoValeapp.resources.dll" />
+  </Deployment.Parts>
+</Deployment>
